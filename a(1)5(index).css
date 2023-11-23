@@ -1,0 +1,165 @@
+body{
+    background-color: yellow;
+}
+.main{
+ margin:  10px 300px;
+}
+.strip{
+    display: flex;
+    justify-content: space-between;
+}
+.box1{
+    background-color:  rgb(33, 121, 156);
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+   animation-name: anim1;
+   animation-iteration-count: infinite;
+   animation-duration: 3s;
+   animation-timing-function: linear;
+   animation-fill-mode: backwards;
+   animation-duration: 2s;
+  
+}
+
+@keyframes anim1 {
+    0%{
+        transform: skewX(-20deg);
+        /* right  */
+        
+    }
+    25%{
+        transform: skewX(-10deg);
+        /* right  */
+        
+    }
+    75%{
+        transform: skewX(10deg);
+        /* left  */
+        
+    }
+    
+    100%{
+        transform: skewX(20deg);
+        /* left  */
+    } 
+}
+
+.box2{
+    background-color: #a9a9a9fb;
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+    animation-name: anim2;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    /* animation-fill-mode: backwards; */
+    
+}
+@keyframes anim2 {
+    0%{
+        transform: skewY(20deg);
+        /* uppar */
+        
+    }
+    
+    50%{
+        transform: skewY(-20deg);
+        /* down  */
+    } 
+    100%{
+        transform: skewY(20deg);
+        /* uppar */
+        
+    }
+}
+
+.box3{
+    background-color:  rgb(33, 121, 156);
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+    animation-name: anim3;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+@keyframes anim3 {
+    from{
+        transform: rotate(-45deg);
+        /* uppar */
+        
+    }
+   
+    to{
+        transform: rotate(45deg);
+        /* down  */
+    } 
+}
+
+.box4{
+    background-color: rgb(33, 121, 156);
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+    animation-name: anim4;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes anim4 {
+    from{
+        transform: scaleY(0.5);
+    }
+    to{
+        transform: scaleY(1);
+    }
+}
+.box5{
+    background-color: red;
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+    animation-name: anim5;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes anim5 {
+    from{
+        transform: scaleX(0.5);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+
+.box6{
+    background-color: green;
+    width: 120px;
+    height: 120px;
+    margin: 30px;
+    animation-name: anim6;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes anim6 {
+    from{
+        transform: rotate(-45deg);
+        /* uppar */
+        
+    }
+   
+    to{
+        transform: rotate(45deg);
+        /* down  */
+    } 
+}
+.f{
+        text-align: center;
+        font-weight: bold;
+        font-size: 35px;
+        
+}

@@ -1,0 +1,149 @@
+body{
+margin-top: 0px;
+margin-bottom: 0px;
+    
+}
+.main{
+    background-image: linear-gradient(to left,orange 50%,green 10%);
+    margin: auto 6px;
+}
+.text{
+    display: flex;
+    font-size: 50px;
+    gap: 20px;
+    justify-content: center;
+}
+.t1{
+    width: 176px;
+    font-weight: bold;
+    background-color: orange;
+}
+.t2{
+    width: 400px;
+    font-weight: bold;
+    background-color:white;
+}
+.t3{
+    width: 110px;
+    font-weight: bold;
+    background-color:green;
+}
+.sky{
+    width: 100%;
+    height: 100vh;
+    background-image: url(sky.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+}
+.main-road{
+    width: 100%;
+    height: 40vh;
+    top: 360px;
+    left: -10px;
+    position: fixed;
+    
+    
+}
+.road{
+    animation: road 2s linear  infinite backwards;
+}
+@keyframes road {
+0%{
+    transform: translateX(-1px);
+    
+}
+20%{
+    transform: translateX(-50px);
+    
+}
+40%{
+    transform: translateX(-105px);
+    
+}
+60%{
+    transform: translateX(-200px);
+    
+}
+80%{
+    transform: translateX(-305px);
+    
+}
+100%{
+    transform: translateX(-405px);
+    
+}
+}
+.city{
+    top: 110px;
+    position: fixed;
+}
+.car{
+    top: 295px;
+    left: 445px;
+    position: fixed;
+    
+}
+.main-wheel{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 139px;
+    position: fixed;
+    left: 475px;
+    top: 372px;
+    
+    
+}
+.wheel{
+    animation: wheel 5s linear  infinite ;
+}
+@keyframes wheel {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: rotate(720deg);
+    }
+    75%{
+        transform: rotate(1080deg);
+    }
+    100%{
+        transform: rotate(1440deg);
+    }
+    
+}
+
+.flag{
+    width: 100px;
+    height: 85px;
+    z-index: 1;
+    position: fixed;
+    left: 680px;
+    top: 280px;
+
+}
+.main-sun{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 80px;
+    top: 60px;
+}
+.sun{
+    animation: sun 6s linear infinite backwards;
+}
+@keyframes sun {
+    from{
+        position: relative;
+        right: 7px;
+    }
+    to{
+        position: relative;
+        right: 100px;
+    }
+    
+}
